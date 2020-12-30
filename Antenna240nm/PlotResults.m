@@ -120,7 +120,7 @@ plot(timeDelayResampled,real(backTrafo))
 
 %% Generating 200nm Antenna Pulse
  [E200nm Atenhance f200nm Spectrum200nm]=pulsefilter(pulse1.t0,pulse1.E,'Field_Enhancement_200nm_roc_5nm_deformed.csv');
-[E240nm Atenhance f240nm Spectrum240nm]=pulsefilterOrig(pulse1.t0,pulse2.E,'ConnectedTriangle_PHZ051G02_X148G55H247p6_normalE.csv');
+[E240nm Atenhance f240nm Spectrum240nm]=pulsefilterOrig(pulse1.t0,pulse2.E,''ConnectedTriangle_PHZ051G02_X148G55H247p6_largerange_normalE.csv'');
 
 %% Zeroing Phase at 250THz
 [~,indexFrqz0]=min(abs(frqz-250e12));
