@@ -447,7 +447,7 @@ figure;
 
 figure;
 set(gcf,'PaperUnits','centimeters','PaperSize',[15,8],'PaperPosition',[0 0 15 8]);
-plot((data2.timeDelayResampled).*(1e15)+6.5,6.4e8.*fftshift(real(decon))./max(fftshift(real(decon))),tosa.*1e15-tosa(index2dsi).*1e15,6.4e8.*(-real((E2dsi)))./max((-real(E2dsi))))
+plot((data2.timeDelayResampled).*(1e15)+6.5,6.4e6.*fftshift(real(decon))./max(fftshift(real(decon))),tosa.*1e15-tosa(index2dsi).*1e15,6.4e6.*(-real((E2dsi)))./max((-real(E2dsi))))
 %plot((data2.timeDelayResampled).*(1e15)+6.5,(fftshift(real(decon))./max(fftshift(real(decon)))).*6.4e8,tosa.*1e15-tosa(index2dsi).*1e15,(-real((E2dsi))).*6.4e8)
 
 ax=gca;
