@@ -457,7 +457,7 @@ ax.XTick=[-50:10:50];
 %ax.YLimMode='manual';
 axis tight;
 ax.XLim=[-50 50];
-ax.YLim=[-6.6e8 6.6e8 ];
+ax.YLim=[-6.6e6 6.6e6 ];
 ax.YLabel.String=' Electric Field (V m^{-1})';
 
 %title(variableName);
